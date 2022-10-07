@@ -39,3 +39,43 @@ main{
 .delete-todo{
     font-size: 0;
 }
+
+#containerCheckBox {
+    display: flex;
+    justify-content: center;
+}
+
+.importante{
+    color: red;
+    margin: 0 10px;
+
+}
+
+.medio {
+    color: yellow;
+    margin: 0 10px;
+}
+
+.facil {
+    color: green;
+    margin: 0 10px;
+   
+}
+
+.iconeAmarelo {
+    color: yellow;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+.iconeVerde {
+    color: green;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.iconeVermelho {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+}

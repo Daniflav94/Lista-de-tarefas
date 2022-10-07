@@ -15,7 +15,7 @@
             <img src="https://soulcodeacademy.org/assets/images/logo/light-logo.png" alt="Logo Soul Code" id="app-logo">
         </header>
 
-        <form action="#" id="todo-form">
+        <form action="#" id="todo-form" class="m-3 d-flex flex-column">
             <div class="m-3 d-flex" >
                 <input type="text" class="form-control me-2" placeholder="Sua tarefa aqui" required id="todo">
                 <button type="submit" class="btn btn-warning" id="add-todo">
@@ -23,6 +23,17 @@
                         add
                     </span>
                 </button>
+            </div>
+                <div id="containerCheckBox">
+                    <input type="radio" name="selecao" id="inputImportante" class="importante">
+                    <label for="inputImportante" id="importante">Importante</label>
+                    
+                    <input type="radio" name="selecao" id="inputAmarelo" class="medio">
+                    <label for="inputAmarelo" id="medio">Moderado</label>
+        
+                    <input type="radio" name="selecao" id="inputVerde" class="facil">
+                    <label for="inputVerde" id="facil">Não urgente</label>
+                </div>
             </div>
         </form>
 
