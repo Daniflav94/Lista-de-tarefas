@@ -1,14 +1,24 @@
 :root{
     --azul: #0f637a;
-    --amarelo: #ffd900;
+    --laranja: #f6b664;
+}
+
+header{
+    margin-bottom: 80px;
 }
 
 body{
-    background-color: var(--azul);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
     min-height: 100vh;
+    width: 50%;
+    
 }
 
 #main-header{
@@ -16,16 +26,17 @@ main{
 }
 
 #app-logo{
-    width: 180px;
+    width: 150px;
+    height: 150px;
 }
 
 #add-todo{
     font-size: 0;
-    background-color: var(--amarelo);
+    background-color: var(--laranja);
 }
 
 #todos-list .card{
-    background-color: var(--amarelo);
+    background-color: var(--laranja);
 }
 
 #todos-list .card + .card{

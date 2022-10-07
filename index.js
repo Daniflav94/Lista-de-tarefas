@@ -64,7 +64,7 @@ function renderizarTodos(){
 
     for (let i = 0; i < todos.length; i++) {
         const divCard = document.createElement('div')
-        divCard.classList.add('card', 'bg-warning')
+        divCard.classList.add('card')
 
         const divCardBody = document.createElement('div')
         divCardBody.classList.add('card-body', 'd-flex', 'align-items-center')
@@ -80,7 +80,7 @@ function renderizarTodos(){
         
         //arrow function, sempre são anonimas
         btnDelete.addEventListener('click', () => {
-            const index = todos.indexOf(tarefa)
+            const index = todos.indexOf(todos[i])
             todos.splice(index, 1) //remove o elemento
             renderizarTodos()
         }) 
@@ -88,7 +88,6 @@ function renderizarTodos(){
         const spanIcon = document.createElement('span')
         spanIcon.classList.add('material-symbols-outlined')
         spanIcon.innerText = 'delete'
-
 
         btnDelete.appendChild(spanIcon) //coloca novos elementos HTML dentro de outros
         divCardBody.append(pTodosText, bolinhas[i], btnDelete) //append coloca mais de um
