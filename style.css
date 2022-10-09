@@ -8,21 +8,38 @@ header{
 }
 
 body{
-    background-color: white;
+    background: rgb(246,182,100);
+    background: linear-gradient(180deg, rgba(246,182,100,1) 22%, rgba(252,254,255,1) 100%);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-main{
-    min-height: 100vh;
-    width: 50%;
+.container{
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 50px;
+    border-radius: 15px;
+    padding: 10px;
     
 }
 
 #main-header{
     height: 40px;
+}
+
+#todo{
+    width: 100%;
+    text-align: center;
+    border: 2px solid var(--laranja);
+}
+
+.form-control:focus{
+    box-shadow: none;
 }
 
 #app-logo{
@@ -37,7 +54,11 @@ main{
 
 #todos-list .card{
     background-color: var(--laranja);
+    height: 35px;
+    justify-content: center;
+    border-radius: 30px;
 }
+
 
 #todos-list .card + .card{
     margin-top: 10px;
@@ -45,6 +66,7 @@ main{
 
 .todo-text{
     margin: 0;
+    font-size: 14px;
 }
 
 .delete-todo{
@@ -54,39 +76,28 @@ main{
 #containerCheckBox {
     display: flex;
     justify-content: center;
+    font-size: 13px;
 }
 
-.importante{
-    color: red;
-    margin: 0 10px;
-
-}
-
-.medio {
-    color: yellow;
-    margin: 0 10px;
-}
-
-.facil {
-    color: green;
-    margin: 0 10px;
-   
+.form-check{
+    margin: 0;
+    padding: 5px;
 }
 
 .iconeAmarelo {
     color: yellow;
     background-color: yellow;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .iconeVerde {
     color: green;
     background-color: green;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .iconeVermelho {
     color: rgb(255, 0, 0);
     background-color: rgb(255, 0, 0);
-    border-radius: 50px;
+    border-radius: 20px;
 }
