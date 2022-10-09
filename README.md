@@ -1,4 +1,4 @@
-## Lista de tarefas - ToDo App
+## Lista de tarefas - ToDo List
 
 ### Objetivo
 
