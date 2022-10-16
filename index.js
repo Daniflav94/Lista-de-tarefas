@@ -1,61 +1,50 @@
 //DOM representa o html dentro do javascript
 
-const todos = []
-const importanciaIcones = []
-if(localStorage.length > 0) {
-    JSON.parse(localStorage.getItem('todosArray'));
-    JSON.parse(localStorage.getItem('iconeImportancia')); 
-    renderizarTodos() 
-}
+let todos = []
+let tarefaMaisIcone = {}
+let importanciaIcones = []
 
 const form = document.getElementById('todo-form')
 
-let importante
-let moderado
-let semUrgencia
-let selectedSize
+let importante = document.querySelector(".importante")
+let moderado = document.querySelector(".moderado")
+let semUrgencia = document.querySelector(".semUrgencia")
 let icone
+let bolinhaVermelha = '<img src="./img/circulo-verm.png" width="12px">'
+let bolinhaAmarela = '<img src="./img/circulo-amar.png" width="12px">'
+let bolinhaVerde = '<img src="./img/circulo-verde.png" width="12px">'
 
 form.addEventListener('submit', function(evento){ //função anonima
 
-    importante = document.querySelector(".importante")
-    moderado = document.querySelector(".moderado")
-    semUrgencia = document.querySelector(".semUrgencia")
-
     evento.preventDefault() //cancela o comportamento padrão de um formulario que seria o recarregamento da página 
     evento.stopPropagation() //evita que a emissão do evento se propague para outros elementos
-    const input = document.querySelector('#todo')
+    const tarefa = document.querySelector('#todo')
    
 
     if(importante.checked) {
-        selectedSize = importante.value
+        icone = importante.value
         icone = document.createElement('span')
-        icone.classList.add('material-symbols-outlined', 'iconeVermelho')
-        icone.innerText = 'circle'
+        icone.innerHTML = bolinhaVermelha
         importanciaIcones.push(icone)
+        console.log(icone)
            
     
     } else if (moderado.checked){
-        selectedSize = moderado.value
+        icone = moderado.value
         icone = document.createElement('span')
-        icone.classList.add('material-symbols-outlined', 'iconeAmarelo')
-        icone.innerText = 'circle'
+        icone.innerHTML = bolinhaAmarela
         importanciaIcones.push(icone)
         
        
     } else if (semUrgencia.checked){
-        selectedSize = semUrgencia.value
+        icone = semUrgencia.value
         icone = document.createElement('span')
-        icone.classList.add('material-symbols-outlined', 'iconeVerde')
-        icone.innerText = 'circle' 
+        icone.innerHTML = bolinhaVerde 
         importanciaIcones.push(icone)     
     }
     
-    todos.push(input.value)
-    input.value = ''
-
-    localStorage.setItem('todosArray', JSON.stringify(todos))
-    localStorage.setItem('iconeImportancia', JSON.stringify(importanciaIcones))
+    todos.push(tarefa.value)
+    tarefa.value = ''
 
     renderizarTodos()
 }) 
@@ -89,9 +78,6 @@ function renderizarTodos(){
             
             todos.splice(i, 1) //remove o elemento
             importanciaIcones.splice(i,1)
-
-            localStorage.setItem('todosArray', JSON.stringify(todos))
-            localStorage.setItem('iconeImportancia', JSON.stringify(importanciaIcones))
 
             renderizarTodos()
             

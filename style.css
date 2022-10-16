@@ -81,23 +81,24 @@ body{
 
 .form-check{
     margin: 0;
-    padding: 5px;
+    padding: 0 15px;
 }
 
-.iconeAmarelo {
-    color: yellow;
-    background-color: yellow;
-    border-radius: 20px;
+.form-check-input[id="inputVermelho"]:checked{
+   border: 1px solid red;
+   background-color: red;
+   box-shadow: none;
 }
 
-.iconeVerde {
-    color: green;
-    background-color: green;
-    border-radius: 20px;
-}
+.form-check-input[id="inputAmarelo"]:checked{
+    border: 1px solid rgb(228, 203, 11);
+    background-color: rgb(228, 203, 11);
+    box-shadow: none;
+ }
+ 
+ .form-check-input[id="inputVerde"]:checked{
+    border: 1px solid rgb(24, 165, 32);
+    background-color: rgb(24, 165, 32);
+    box-shadow: none;
+ }
 
-.iconeVermelho {
-    color: rgb(255, 0, 0);
-    background-color: rgb(255, 0, 0);
-    border-radius: 20px;
-}
