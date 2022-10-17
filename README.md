@@ -16,8 +16,5 @@ https://daniflav94.github.io/Lista-de-tarefas/
 
 ### Imagens projeto:
 
-![imagem-cel](https://user-images.githubusercontent.com/99519903/194779262-005bfcd7-de96-4aa1-b6e9-de624a50fe02.jpg)
-
-![imagem-web](https://user-images.githubusercontent.com/99519903/194779267-5ab05e1c-c6ab-4b29-9329-0963972fc500.jpg)
-
+![todo-list](https://user-images.githubusercontent.com/99519903/196199075-39cd01b7-9d15-4048-8885-ddc815dc3d15.jpg)
 
