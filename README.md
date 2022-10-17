@@ -7,8 +7,8 @@ Administrador de tarefas diárias, no qual é possível inserir tarefas com grau
 ### Tecnologias utilizadas:
 
 - HTML e CSS;
-- Bootstrap (aplicado no input de tarefa);
-- Javascript (Integração do HTML com JS utilizando DOM).
+- Bootstrap;
+- Javascript.
 
 ### Link página: 
 
