@@ -1,14 +1,14 @@
-## Lista de tarefas - ToDo List
+## Lista de tarefas - ToDo List 📝
 
 ### Objetivo
 
-Administrador de tarefas diárias, no qual é possível inserir tarefas com grau de importância e excluí-las. Pretendo aprimorar o projeto agregando o LocalStorage para salvar as tarefas e opção de ticar as tarefas realizadas.
+Administrador de tarefas diárias, no qual é possível inserir tarefas com grau de importância e excluí-las. 
 
 ### Tecnologias utilizadas:
 
 - HTML e CSS;
-- Bootstrap (aplicado no input de tarefa);
-- Javascript (Integração do HTML com JS utilizando DOM).
+- Bootstrap;
+- Javascript.
 
 ### Link página: 
 
