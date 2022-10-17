@@ -2,7 +2,7 @@
 
 ### Objetivo
 
-Administrador de tarefas diárias, no qual é possível inserir tarefas com grau de importância e excluí-las. Pretendo aprimorar o projeto agregando o LocalStorage para salvar as tarefas e opção de ticar as tarefas realizadas.
+Administrador de tarefas diárias, no qual é possível inserir tarefas com grau de importância e excluí-las. 
 
 ### Tecnologias utilizadas:
 
