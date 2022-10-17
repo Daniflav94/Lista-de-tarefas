@@ -3,6 +3,7 @@
 ### Objetivo
 
 Administrador de tarefas diárias, no qual é possível inserir tarefas com grau de importância e excluí-las. 
+A página está responsiva.
 
 ### Tecnologias utilizadas:
 
